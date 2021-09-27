@@ -128,12 +128,13 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding-top: 200px;
+  padding-bottom: 280px;
   color: var(--white-color-text);
 }
 
 .btn {
   font-family: inherit;
-  position: absolute;
   color: var(--white-color-text);
   background-color: var(--header-link-color);
   border: none;
@@ -156,19 +157,28 @@ body {
 
 .our-team {
   background-color: var(--bg-our-team);
+  padding-bottom: 94px;
 }
 .main-photo-heading {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  padding-bottom: 50px;
   color: var(--primary-title-color);
+}
+
+.our-team-heading {
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .our-team-name {
   font-weight: 500;
   line-height: 1.19px;
   text-align: center;
+  margin-top: 30px;
   color: var(--primary-title-color);
 }
 
@@ -177,6 +187,8 @@ body {
   font-weight: normal;
   line-height: 1.19;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .footer {
@@ -204,6 +216,47 @@ body {
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* позиционирование индекс.хтмл */
+.main-title-box {
+  margin-bottom: 94px;
+}
+
+.main-section-text {
+  margin-bottom: 94px;
+}
+
+.list-position {
+  display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.item-position {
+  flex-basis: calc(100% / 4 -30px);
+}
+
+.item-position:not(:last-child) {
+  margin-right: 30px;
+}
+
+.photo-container {
+  display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.item-photo-container {
+  flex-basis: calc(100% / 3 -30px);
+}
+.our-team-list {
+  display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.our-team-item {
+  flex-basis: calc(100% / 4 -30px);
 }
 
 /* разметка странички портфолио */
