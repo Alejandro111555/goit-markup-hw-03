@@ -25,6 +25,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -165,6 +167,9 @@ body {
   line-height: 1.71;
 }
 
+.main-section-image {
+  padding-bottom: 94px;
+}
 .our-team {
   background-color: var(--bg-our-team);
   padding-bottom: 94px;
@@ -207,11 +212,24 @@ body {
   background-color: var(--title-box-color);
 }
 
-.style-logo-foter {
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--header-link-color);
+}
+.style-logo-footer {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   color: var(--white-color-text);
+}
+.footer-list {
+  margin-top: 9px;
 }
 
 .footer-address {
@@ -274,15 +292,13 @@ body {
   margin-top: 94px;
 }
 .our-team-item {
-  flex-basis: calc(100% / 4 - 45px);
+  flex-basis: calc(100% / 4 - 30px);
   margin: 15px;
 }
 .our-team-item:not(:last-child) {
   margin-right: 15px;
 }
-.our-team-item:first-child {
-  margin-left: 0px;
-}
+
 /* разметка странички портфолио */
 
 .section {
@@ -302,7 +318,8 @@ body {
 }
 
 .filter:focus,
-.filter:hover {
+.filter:hover,
+.btn-active {
   color: var(--white-color-text);
   background: var(--header-link-color);
 }
@@ -376,6 +393,5 @@ footer.header-logo {
 }
 
 .item-contakts-link:first-child {
-  margin-top: 9px;
   margin-bottom: 9px;
 }
