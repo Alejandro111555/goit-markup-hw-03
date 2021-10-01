@@ -144,6 +144,7 @@ body {
   height: 50px;
   font-family: inherit;
   font-weight: 700;
+  border-radius: 4px;
   color: var(--white-color-text);
   background-color: var(--header-link-color);
   border: none;
@@ -247,7 +248,7 @@ body {
 }
 
 .item-position {
-  flex-basis: calc(100% / 4 -30px);
+  flex-basis: calc((100% - (3 * 30px)) / 4);
 }
 
 .item-position:not(:last-child) {
@@ -294,6 +295,7 @@ body {
   padding-right: 22px;
   line-height: 1.62;
   text-align: center;
+  border-radius: 4px;
   color: var(--primary-title-color);
   background: var(--bg-our-team);
   border: none;
